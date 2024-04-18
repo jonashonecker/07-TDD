@@ -1,17 +1,19 @@
 import java.util.Objects;
 
 public class PlayerCharacter {
+    static int defaultPosition = 0;
+
     public static int getX() {
-        return 0;
+        return defaultPosition;
     }
     public static int getY() {
-        return 0;
+        return defaultPosition;
     }
     public static int move(String keyPressed) {
         if (Objects.equals(keyPressed, "W")) {
             return 1;
         } else {
-            return 0;
+            return defaultPosition;
         }
     }
 }
