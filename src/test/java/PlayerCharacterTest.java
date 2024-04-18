@@ -60,4 +60,31 @@ public class PlayerCharacterTest {
         int expected = -1;
         assertEquals(expected, actual);
     }
+
+    @Test
+    void moveWhenKeyAPressedReturnIntMinusOne(){
+        // GIVEN
+        String keyPressed = "A";
+
+        // WHEN
+        int actual = PlayerCharacter.move(keyPressed);
+
+        // THEN
+        int expected = -1;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void moveWhenKeyDPressedReturnIntMinusOne(){
+        // GIVEN
+        String keyPressed = "D";
+
+        // WHEN
+        int actual = PlayerCharacter.move(keyPressed);
+
+        // THEN
+        int expected = 1;
+        assertEquals(expected, actual);
+    }
+
 }
