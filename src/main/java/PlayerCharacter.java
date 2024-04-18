@@ -11,7 +11,7 @@ public class PlayerCharacter {
     public static int move(String keyPressed) {
         switch (keyPressed) {
             case "W" -> {
-                yPosition += 1;
+                yPosition++;
                 return getY();
             }
             default -> {
