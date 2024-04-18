@@ -1,11 +1,18 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PlayerCharacterTest {
 
+    @BeforeEach
+    void setup() {
+        PlayerCharacter.xPosition = 0;
+        PlayerCharacter.yPosition = 0;
+    }
+
     @Test
-    void getXWhenCalledWithNoArgumentsReturnIntZero(){
+    void getXWhenInitializedReturnIntZero(){
         // GIVEN
 
         // WHEN
@@ -17,7 +24,7 @@ public class PlayerCharacterTest {
     }
 
     @Test
-    void getYWhenCalledWithNoArgumentsReturnIntZero(){
+    void getYWhenInitializedReturnIntZero(){
         // GIVEN
 
         // WHEN
