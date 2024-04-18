@@ -14,6 +14,10 @@ public class PlayerCharacter {
                 yPosition++;
                 return getY();
             }
+            case "S" -> {
+                yPosition--;
+                return getY();
+            }
             default -> {
                 return 0;
             }
